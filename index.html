@@ -1,139 +1,660 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet"type="text/css" href="css/style.css">
-        <link rel ="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.gooleapis.com/css2?family=Josefin+Sans:ital,wgt@0,100;0
-        ,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santhoshgandhi M | .NET Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
 <body>
-<div class="hero">
-    <nav>
-        <h2 class="logo">Portfo<span>lio</span></h2>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#Contact">Contact</a></li>
-        </ul>
-    </nav>
-</div>
-    <div class="content">
-        <h4>Hello,my name is</h4>
-        <h1>Santhosh<span>gandhi</span></h1>
-        <h3>I'm a Web developer.</h3>
-        <button class="btn"><a href="Resume.pdf">DOWNLOAD CV</a></button>
-    </div>
+    <!-- Navigation Bar -->
+    <header class="navbar-header">
+        <nav class="nav-container">
+            <h2 class="logo">Santhosh<span>gandhi</span></h2>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in-up">
+            <h4>Hello, my name is</h4>
+            <h1>Santhosh<span>gandhi</span> M</h1>
+            <h3>I'm a <span id="typing-text" class="typed-cursor">.NET Developer</span></h3>
+            <p class="hero-subtitle">Results-driven developer with 3+ years of experience building secure, scalable web
+                applications and enterprise solutions.</p>
+            <div class="hero-buttons">
+                <a href="Santhosh Resume.pdf" target="_blank" class="btn btn-primary"><i
+                        class="fa-solid fa-download"></i>
+                    Download CV</a>
+                <a href="#Contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
     </section>
-<section id="about"class="about">
-    <div class="main">
-        <img src="img/img.JPG">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <h5>developer<span> & Designer</span></h5>
-            <p>I am a front-end developer,currently pursuing my MCA at Hindusthan College of Engineering and technology
-            I can provide clean code and perfect design.I also make the website more & more interactive with web animations.
-            A responsive design makes your website accessible to all users, regardless of their device.</p>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>About <span>Me</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="image-border"></div>
+                    <img src="img/img.JPG" alt="Santhoshgandhi M">
+                </div>
+
+                <div class="about-text-content reveal-right">
+                    <h5>Software Developer & .NET Specialist</h5>
+                    <p>I am a results-driven Software Developer with 3+ years of experience building web applications
+                        and enterprise solutions using <strong>C#, ASP.NET Core, Blazor, Python, and SQL
+                            Server</strong>. I specialize in developing financial, banking, authentication, and
+                        logistics applications with a strong focus on scalability, security, and performance.</p>
+                    <p>I regularly leverage AI-powered development tools and coding agents to accelerate development,
+                        improve code quality, and streamline debugging. I have a strong understanding of the Software
+                        Development Life Cycle (SDLC) and Agile methodologies.</p>
+
+                    <!-- Quick Info Grid -->
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fa-solid fa-briefcase"></i>
+                            <div>
+                                <span>Experience</span>
+                                <p>3+ Years (Jan 2023 - Present)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div>
+                                <span>Education</span>
+                                <p>MCA, Hindusthan College (8.3 CGPA)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Location</span>
+                                <p>Coimbatore, India</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <p>santhoshgandhim@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-<section id="skills" style="padding: 0%;">
-<div class="skills container">
-<div class="title">
-    <h2>Ski<span>lls</span></h2>
-</div>
-<p class="text">I'm interested to design the webpage using the Html & css
-    and develop the Front-end design. I know the programming languages like c,c++ and java.</p>
-<div class="row">
-    <div class="item">
-        <div class="item-text">
-            <span>Html</span>
-            <span class="w-65">65%</span>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>My <span>Skills</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <p class="section-desc">My primary focus is on the .NET ecosystem, backend architectures, APIs, and
+                AI-assisted development tools.</p>
+
+            <!-- Skills Tabs Navigation -->
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="backend">Languages & Backend</button>
+                <button class="tab-btn" data-tab="frontend">Frontend & UI</button>
+                <button class="tab-btn" data-tab="db-cloud">Database & Cloud</button>
+                <button class="tab-btn" data-tab="tools-devops">Tools & DevOps</button>
+            </div>
+
+            <!-- Skills Content Areas -->
+            <div class="skills-content">
+                <!-- Tab 1: Backend -->
+                <div class="tab-content active" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-code text-primary"></i> C# & .NET</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-cubes text-primary"></i> ASP.NET
+                                    Core</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-python text-primary"></i> Python</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-layer-group text-primary"></i> ASP.NET
+                                    MVC</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Frontend -->
+                <div class="tab-content" id="frontend">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-bolt text-primary"></i> Blazor</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-palette text-primary"></i>
+                                    MudBlazor</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-html5 text-primary"></i> HTML5 &
+                                    CSS3</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-js text-primary"></i> JavaScript</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Database & Cloud -->
+                <div class="tab-content" id="db-cloud">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-database text-primary"></i> SQL
+                                    Server</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-server text-primary"></i> SQLite</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-aws text-primary"></i> AWS (Lambda /
+                                    Textract)</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-cloud-arrow-up text-primary"></i> Azure
+                                    DevOps</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Tools & DevOps -->
+                <div class="tab-content" id="tools-devops">
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-brands fa-github text-primary"></i> Git &
+                                    GitHub</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-robot text-primary"></i> AI-Assisted Dev
+                                    (Copilot/ChatGPT)</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-envelope-open-text text-primary"></i>
+                                    RabbitMQ</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-info">
+                                <span class="skill-name"><i class="fa-solid fa-shield-halved text-primary"></i> EF Core
+                                    / RBAC</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="progress">
-            <div class="progress-bar w-65"></div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional <span>Experience</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal-bottom">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jan 2023 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Software Developer</h3>
+                        <h4 class="company">ByVal Technologies India Pvt Ltd</h4>
+                        <span class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, India</span>
+
+                        <ul class="experience-bullets">
+                            <li>Developed and maintained travel expense and banking applications using <strong>Blazor,
+                                    MudBlazor, and ASP.NET Core</strong>, delivering secure and scalable web solutions.
+                            </li>
+                            <li>Built robust backend services with <strong>Entity Framework Core and SQL
+                                    Server</strong>, supporting workflows for transaction processing, approvals, and
+                                reporting.</li>
+                            <li>Leveraged AI-powered coding assistants and developer productivity tools to accelerate
+                                feature development, code generation, debugging, refactoring, and documentation while
+                                maintaining high code quality standards.</li>
+                            <li>Integrated <strong>RabbitMQ</strong> to handle asynchronous messaging for notifications,
+                                background processing, and system decoupling.</li>
+                            <li>Implemented role-based access control, authentication flows, and custom permission
+                                handling to meet compliance and security requirements.</li>
+                            <li>Designed responsive UI components and dashboards for real-time financial data
+                                visualization and enhanced user experience.</li>
+                            <li>Automated project documentation and report generation workflows using AI-assisted tools,
+                                improving productivity and reducing manual effort.</li>
+                            <li>Collaborated in agile teams, conducted code reviews, and mentored junior developers.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <div class="item-text">
-            <span>Css</span>
-            <span class="w-60">60%</span>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Relevant <span>Projects</span></h2>
+                <div class="line"></div>
+            </div>
+
+            <p class="section-desc">Here is a selection of professional systems I have built and optimized.</p>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card reveal-bottom">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-warehouse"></i></span>
+                            <h3>WMS (Warehouse Management)</h3>
+                        </div>
+                        <p class="project-desc">Developed and maintained shipment and invoice modules to handle
+                            real-time data processing and validation. Implemented document upload and validation
+                            workflows to ensure mandatory compliance before shipment approval, reducing processing
+                            errors.</p>
+                        <div class="project-tech">
+                            <span>ASP.NET MVC</span>
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card reveal-bottom" style="animation-delay: 0.1s;">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <h3>B-Auth</h3>
+                        </div>
+                        <p class="project-desc">Developed and maintained an authentication and authorization platform
+                            for secure user access and role-based permissions. Built a centralized web portal using
+                            Blazor and MudBlazor to manage application settings and user access rights.</p>
+                        <div class="project-tech">
+                            <span>Blazor</span>
+                            <span>ASP.NET Core</span>
+                            <span>MudBlazor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal-bottom" style="animation-delay: 0.2s;">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-bolt"></i></span>
+                            <h3>Blink</h3>
+                        </div>
+                        <p class="project-desc">Integrated the Blink application with banking credit gateway systems to
+                            support secure financial transactions. Designed responsive, user-friendly forms and
+                            interfaces using MudBlazor to handle complex JSON configuration processes.</p>
+                        <div class="project-tech">
+                            <span>MudBlazor</span>
+                            <span>ASP.NET Core</span>
+                            <span>JSON Configs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal-bottom" style="animation-delay: 0.3s;">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-chart-line"></i></span>
+                            <h3>CAST</h3>
+                        </div>
+                        <p class="project-desc">Developed and enhanced Cash Accounting Studio for financial
+                            reconciliation workflows. Migrated legacy backend services to serverless AWS Lambda
+                            architecture to improve scalability and reduce cloud infrastructure costs. Integrated
+                            RabbitMQ.</p>
+                        <div class="project-tech">
+                            <span>AWS Lambda</span>
+                            <span>RabbitMQ</span>
+                            <span>ASP.NET Core</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal-bottom" style="animation-delay: 0.4s;">
+                    <div class="project-info">
+                        <div class="project-header">
+                            <span class="project-icon"><i class="fa-solid fa-qrcode"></i></span>
+                            <h3>C-Scan</h3>
+                        </div>
+                        <p class="project-desc">Designed and built an AI-powered receipt scanning and OCR solution to
+                            automate invoice data extraction. Implemented image preprocessing pipelines for noise
+                            reduction, skew correction, and text enhancement using OpenCV and Tesseract.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Tesseract OCR</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="progress">
-            <div class="progress-bar w-60"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="Contact section-padding">
+        <div class="container">
+            <div class="Contact-form reveal-bottom">
+                <h1>Contact <span>Me</span></h1>
+                <p>I am open to new opportunities and collaboration. Feel free to connect with me.</p>
+
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+91 96297 94110</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>santhoshgandhim@gmail.com</span>
+                    </div>
+                </div>
+
+                <form action="mailto:santhoshgandhim@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-row">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="E-mail Address" required>
+                    </div>
+                    <input type="text" name="Subject" placeholder="Write a subject" required>
+                    <textarea name="Message" rows="8" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <div class="item-text">
-            <span>Bootstrap</span>
-            <span class="w-60">60%</span>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Santhoshgandhi M</p>
+        <p>Connect with me on social media:</p>
+        <div class="social">
+            <a href="https://github.com/santhosh0110" target="_blank" aria-label="GitHub"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/santhosh012000?t=5V11mbxC_1LSSvBbXWcNuQ&s=09" target="_blank"
+                aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
         </div>
-        <div class="progress">
-            <div class="progress-bar w-60"></div>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item-text">
-            <span>C#</span>
-            <span class="w-55">55%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar w-55"></div>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item-text">
-            <span>Ado.Net</span>
-            <span class="w-45">45%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar w-45"></div>
-        </div>
-    </div>
-    <div class="item">
-        <div class="item-text">
-            <span>SqlServer</span>
-            <span class="w-55">55%</span>
-        </div>
-        <div class="progress">
-            <div class="progress-bar w-55"></div>
-        </div>
-    </div>
-    </div>
-</div>
-</section>
-<section id="internship">
-    <div class="intern">
-        <h2>Intern<span>ship</span></h2>
-    </div>
-</section>
-<section id="Contact" class="Contact">
-    <div class="Contact-form">
-        <h1>Cont<span>act</span></h1>
-        <p>I am available for working.Connect with me via phone:9629794110 
-            or email: santhosh012000@gmail.com </p>
-            <form action="mailto:santhosh012000@gmail.com" method="post" enctype="text/plain">
-                <input type="text" name="Name" placeholder="Your Name" required>
-                <input type="email" name="email" id="" placeholder="E-mail" required>
-                <input type="text" name="" placeholder="Write a subject" required>
-                <textarea name="Message" rows="10" cols="30" placeholder="Your Message"></textarea>
-                <input type="submit" name="" value="Submit" class="btn">
-            </form> 
-        </p>
-    </div>
-</section>
-<footer>
-    <p>Santhoshgandhi M</p>
-    <p>Social media</p>
-    <div class="social">
-        <a href="https://www.facebook.com/SanthoshGandhiM?mibextid=ZbWKwL"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://instagram.com/santhosh_gandhi_m?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://twitter.com/santhosh012000?t=5V11mbxC_1LSSvBbXWcNuQ&s=09"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://github.com/santhosh0110"><i class="fa-brands fa-github"></i></a>
-    </div>
-    <p class="end">Copyrights by Santhoshgandhi</p>
-</footer>
+        <p class="end">&copy; 2026 Santhoshgandhi M. All rights reserved.</p>
+    </footer>
+
+    <!-- Vanilla Javascript -->
+    <script>
+        // Typing Effect Script
+        const words = [".NET Developer", "C# & Blazor Specialist", "AI-Assisted Developer"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 100;
+        const deletingSpeed = 50;
+        const delayBetweenWords = 2000;
+        const target = document.getElementById("typing-text");
+
+        function type() {
+            const currentWord = words[wordIndex];
+            if (isDeleting) {
+                target.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                target.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let speed = isDeleting ? deletingSpeed : typingSpeed;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                isDeleting = true;
+                speed = delayBetweenWords;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                speed = 500;
+            }
+
+            setTimeout(type, speed);
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(type, 1000);
+
+            // Scroll reveal animation setting
+            setupScrollReveal();
+        });
+
+        // Skill Tabs Switching
+        const tabBtns = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const tabId = btn.getAttribute("data-tab");
+
+                // Remove active classes
+                tabBtns.forEach(b => b.classList.remove("active"));
+                tabContents.forEach(c => c.classList.remove("active"));
+
+                // Add active classes
+                btn.classList.add("active");
+                document.getElementById(tabId).classList.add("active");
+            });
+        });
+
+        // Mobile Nav Toggle
+        const navToggle = document.querySelector(".nav-toggle");
+        const navMenu = document.querySelector(".nav-menu");
+
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+            const icon = navToggle.querySelector("i");
+            if (navMenu.classList.contains("open")) {
+                icon.className = "fa-solid fa-xmark";
+            } else {
+                icon.className = "fa-solid fa-bars";
+            }
+        });
+
+        // Close mobile nav when clicking a link
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("open");
+                navToggle.querySelector("i").className = "fa-solid fa-bars";
+            });
+        });
+
+        // Header active link and background shift on scroll
+        const header = document.querySelector(".navbar-header");
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-menu a");
+
+        window.addEventListener("scroll", () => {
+            // Header background blur toggle
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+
+            // Highlighting current section
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 250)) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href").includes(current)) {
+                    link.classList.add("active");
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        function setupScrollReveal() {
+            const revealElements = document.querySelectorAll('.reveal-bottom, .reveal-left, .reveal-right, .fade-in-up');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target); // Reveal only once
+                    }
+                });
+            }, {
+                threshold: 0.15
+            });
+
+            revealElements.forEach(element => {
+                observer.observe(element);
+            });
+        }
+    </script>
 </body>
+
 </html>
