@@ -4,657 +4,986 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santhoshgandhi M | .NET Developer Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary Meta Tags -->
+    <title>Santhoshgandhi M | Software Developer &amp; .NET Specialist</title>
+    <meta name="title" content="Santhoshgandhi M | Software Developer &amp; .NET Specialist">
+    <meta name="description"
+        content="Results-driven Software Developer with 3+ years of experience building scalable enterprise applications using C#, ASP.NET Core, Blazor, SQL Server, and AI-assisted workflows.">
+    <meta name="keywords"
+        content="Santhoshgandhi M, .NET Developer, C#, ASP.NET Core, Blazor, MudBlazor, SQL Server, Python, RabbitMQ, AWS Lambda, Software Engineer, Portfolio">
+    <meta name="author" content="Santhoshgandhi M">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://santhosh0110.github.io/Portfolio/">
+
+    <!-- Favicon (Embedded Modern SVG Icon) -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='55' font-weight='800' fill='white'>S</text></svg>">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santhosh0110.github.io/Portfolio/">
+    <meta property="og:title" content="Santhoshgandhi M | Software Developer &amp; .NET Specialist">
+    <meta property="og:description"
+        content="Results-driven Software Developer with 3+ years of experience building secure, scalable enterprise applications using C#, ASP.NET Core, Blazor, and cloud solutions.">
+    <meta property="og:image" content="img/profile.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://santhosh0110.github.io/Portfolio/">
+    <meta property="twitter:title" content="Santhoshgandhi M | Software Developer &amp; .NET Specialist">
+    <meta property="twitter:description"
+        content="Results-driven Software Developer with 3+ years of experience building enterprise applications using C#, ASP.NET Core, Blazor, and AI coding agents.">
+    <meta property="twitter:image" content="img/profile.webp">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome Icons -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
-    <!-- Custom CSS -->
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Structured JSON-LD Schema for Google Search -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Santhoshgandhi M",
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "ByVal Technologies India Pvt Ltd"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Hindusthan College of Engineering and Technology"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Coimbatore",
+        "addressCountry": "India"
+      },
+      "email": "santhoshgandhim@gmail.com",
+      "telephone": "+919629794110",
+      "sameAs": [
+        "https://github.com/santhosh0110",
+        "https://www.linkedin.com/in/santhoshgandhim",
+        "https://twitter.com/santhosh012000"
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <header class="navbar-header">
-        <nav class="nav-container">
-            <h2 class="logo">Santhosh<span>gandhi</span></h2>
+    <!-- Top Progress Scroll Indicator -->
+    <div id="scroll-progress" aria-hidden="true"></div>
 
-            <button class="nav-toggle" aria-label="Toggle navigation">
+    <!-- 1. Navigation Bar -->
+    <header class="navbar-header" role="banner">
+        <nav class="nav-container" aria-label="Main Navigation">
+            <a href="#home" class="logo" aria-label="Santhoshgandhi M Home">
+                Santhosh<span>gandhi</span>
+                <span class="logo-badge">.NET</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="primary-nav-menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
 
-            <ul class="nav-menu">
+            <ul id="primary-nav-menu" class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#approach">What I Do</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="Santhosh Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-cta-btn">
+                        <i class="fa-solid fa-download"></i> Resume
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content fade-in-up">
-            <h4>Hello, my name is</h4>
-            <h1>Santhosh<span>gandhi</span> M</h1>
-            <h3>I'm a <span id="typing-text" class="typed-cursor">.NET Developer</span></h3>
-            <p class="hero-subtitle">Results-driven developer with 3+ years of experience building secure, scalable web
-                applications and enterprise solutions.</p>
-            <div class="hero-buttons">
-                <a href="Santhosh Resume.pdf" target="_blank" class="btn btn-primary"><i
-                        class="fa-solid fa-download"></i>
-                    Download CV</a>
-                <a href="#Contact" class="btn btn-secondary"><i class="fa-solid fa-paper-plane"></i> Let's Talk</a>
-            </div>
-        </div>
-        <div class="scroll-down">
-            <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
-        </div>
-    </section>
+    <!-- Main Content Container -->
+    <main id="main-content">
 
-    <!-- About Section -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>About <span>Me</span></h2>
-                <div class="line"></div>
-            </div>
+        <!-- 2. Hero Section with 3D Interactive Canvas -->
+        <section id="home" class="hero" aria-label="Introduction">
+            <!-- Interactive 3D Software Engineering Architecture Canvas -->
+            <canvas id="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero-overlay" aria-hidden="true"></div>
 
-            <div class="about-grid">
-                <div class="about-image-wrapper reveal-left">
-                    <div class="image-border"></div>
-                    <img src="img/img.JPG" alt="Santhoshgandhi M">
+            <div class="container hero-content fade-in-up">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    <span>Available for New Opportunities</span>
                 </div>
 
-                <div class="about-text-content reveal-right">
-                    <h5>Software Developer & .NET Specialist</h5>
-                    <p>I am a results-driven Software Developer with 3+ years of experience building web applications
-                        and enterprise solutions using <strong>C#, ASP.NET Core, Blazor, Python, and SQL
-                            Server</strong>. I specialize in developing financial, banking, authentication, and
-                        logistics applications with a strong focus on scalability, security, and performance.</p>
-                    <p>I regularly leverage AI-powered development tools and coding agents to accelerate development,
-                        improve code quality, and streamline debugging. I have a strong understanding of the Software
-                        Development Life Cycle (SDLC) and Agile methodologies.</p>
+                <p class="hero-eyebrow">Hello, my name is</p>
+                <h1>SANTHOSHGANDHI M</h1>
 
-                    <!-- Quick Info Grid -->
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <i class="fa-solid fa-briefcase"></i>
-                            <div>
-                                <span>Experience</span>
-                                <p>3+ Years (Jan 2023 - Present)</p>
-                            </div>
+                <div class="hero-role-wrapper">
+                    <span>I'm a </span><span id="typing-text" class="typed-cursor">.NET Developer</span>
+                </div>
+
+                <p class="hero-subtitle">
+                    Building scalable, secure, and intelligent software solutions using modern <strong>.NET
+                        technologies</strong>, <strong>cloud services</strong>, and <strong>AI-powered
+                        development</strong>.
+                </p>
+
+                <!-- Core Capability Badges -->
+                <div class="hero-pills">
+                    <span class="hero-pill"><i class="fa-solid fa-code"></i> C# &amp; ASP.NET Core</span>
+                    <span class="hero-pill"><i class="fa-solid fa-bolt"></i> Blazor &amp; MudBlazor</span>
+                    <span class="hero-pill"><i class="fa-solid fa-database"></i> SQL Server &amp; EF Core</span>
+                    <span class="hero-pill"><i class="fa-solid fa-cloud"></i> AWS Lambda &amp; RabbitMQ</span>
+                    <span class="hero-pill"><i class="fa-solid fa-robot"></i> AI-Assisted Engineering</span>
+                </div>
+
+                <!-- Call to Action Buttons -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-laptop-code"></i> View My Work
+                    </a>
+                    <a href="Santhosh Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-solid fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+
+                <!-- Verified Social Links -->
+                <div class="hero-socials">
+                    <a href="https://github.com/santhosh0110" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/santhoshgandhim" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/santhosh012000?t=5V11mbxC_1LSSvBbXWcNuQ&amp;s=09" target="_blank"
+                        rel="noopener noreferrer" aria-label="Twitter / X Profile">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="mailto:santhoshgandhim@gmail.com" aria-label="Send Direct Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bouncing Chevron -->
+            <div class="scroll-down">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- 3. About Me Section -->
+        <section id="about" class="about section-padding" aria-label="About Santhoshgandhi M">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About <span>Me</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Photo Column with Modern Frame & Floating Tech Badges -->
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="image-border"></div>
+                        <div class="floating-badge badge-top">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Enterprise Solutions</span>
                         </div>
-                        <div class="info-item">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                            <div>
-                                <span>Education</span>
-                                <p>MCA, Hindusthan College (8.3 CGPA)</p>
-                            </div>
+                        <div class="about-img-container">
+                            <picture>
+                                <source srcset="img/profile.webp" type="image/webp">
+                                <img src="img/profile.jpg" alt="Santhoshgandhi M - Software Developer" width="400"
+                                    height="500" loading="lazy">
+                            </picture>
                         </div>
-                        <div class="info-item">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div>
-                                <span>Location</span>
-                                <p>Coimbatore, India</p>
-                            </div>
+                        <div class="floating-badge badge-bottom">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>AI-Accelerated Dev</span>
                         </div>
-                        <div class="info-item">
-                            <i class="fa-solid fa-envelope"></i>
-                            <div>
-                                <span>Email</span>
-                                <p>santhoshgandhim@gmail.com</p>
+                    </div>
+
+                    <!-- Narrative & Key Details Column -->
+                    <div class="about-text-content reveal-right">
+                        <h3>Santhoshgandhi M</h3>
+                        <p class="about-subtitle">Software Developer &amp; .NET Specialist</p>
+
+                        <div class="about-paragraphs">
+                            <p>
+                                I am a results-driven Software Developer with <strong>3+ years of professional
+                                    experience</strong> building web applications and enterprise solutions using
+                                <strong>C#, ASP.NET Core, Blazor, MVC, Python, and SQL Server</strong>.
+                            </p>
+                            <p>
+                                My engineering background covers <strong>financial applications, banking systems,
+                                    centralized authentication platforms, and warehouse logistics</strong>. I focus on
+                                architecting scalable backend services, event-driven messaging with RabbitMQ, and
+                                robust role-based access controls (RBAC) that ensure security and regulatory compliance.
+                            </p>
+                            <p>
+                                I actively leverage <strong>AI-powered development tools, GitHub Copilot, and coding
+                                    agents</strong> to accelerate feature velocity, improve test coverage, streamline
+                                debugging, and automate technical documentation while upholding stringent code quality
+                                standards.
+                            </p>
+                        </div>
+
+                        <!-- 4-Box Key Metrics Grid -->
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <div>
+                                    <span class="info-label">Experience</span>
+                                    <p class="info-value">3+ Years (Jan 2023 – Present)</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <span class="info-label">Education</span>
+                                    <p class="info-value">MCA, Hindusthan College (8.3 CGPA)</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <span class="info-label">Location</span>
+                                    <p class="info-value">Coimbatore, India</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <p class="info-value">santhoshgandhim@gmail.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>My <span>Skills</span></h2>
-                <div class="line"></div>
+        <!-- 4. Technical Skills Section -->
+        <section id="skills" class="skills section-padding" aria-label="Technical Skills">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical <span>Skills</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <p class="section-desc">
+                    Comprehensive skill taxonomy across modern languages, distributed backends, interactive frontends,
+                    cloud architectures, and developer tooling.
+                </p>
+
+                <!-- Category Filtering Navigation Tabs -->
+                <div class="skills-category-tabs">
+                    <button class="skill-tab-btn active" data-filter="all">All Disciplines</button>
+                    <button class="skill-tab-btn" data-filter="backend">Backend &amp; Languages</button>
+                    <button class="skill-tab-btn" data-filter="frontend">Frontend &amp; UI</button>
+                    <button class="skill-tab-btn" data-filter="data-cloud">Database &amp; Cloud</button>
+                    <button class="skill-tab-btn" data-filter="tools-ai">Tools &amp; AI Agents</button>
+                </div>
+
+                <!-- Categorized Skills Grid -->
+                <div class="skills-categories-grid">
+
+                    <!-- Category 1: Programming Languages -->
+                    <div class="skill-category-card reveal-bottom" data-category="backend">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> C#</span>
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Backend Development -->
+                    <div class="skill-category-card reveal-bottom" data-category="backend">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-cubes"></i></div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-solid fa-server"></i> ASP.NET Core</span>
+                            <span class="skill-badge"><i class="fa-solid fa-layer-group"></i> ASP.NET MVC</span>
+                            <span class="skill-badge"><i class="fa-solid fa-network-wired"></i> Entity Framework
+                                Core</span>
+                            <span class="skill-badge"><i class="fa-solid fa-arrow-right-arrow-left"></i> RESTful
+                                APIs</span>
+                            <span class="skill-badge"><i class="fa-solid fa-shield-halved"></i> RBAC Security</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Frontend Development -->
+                    <div class="skill-category-card reveal-bottom" data-category="frontend">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-desktop"></i></div>
+                            <h3>Frontend &amp; UI</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Blazor</span>
+                            <span class="skill-badge"><i class="fa-solid fa-palette"></i> MudBlazor</span>
+                            <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5</span>
+                            <span class="skill-badge"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Database Management -->
+                    <div class="skill-category-card reveal-bottom" data-category="data-cloud">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-database"></i></div>
+                            <h3>Database Management</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> Microsoft SQL Server</span>
+                            <span class="skill-badge"><i class="fa-solid fa-hard-drive"></i> SQLite</span>
+                            <span class="skill-badge"><i class="fa-solid fa-gears"></i> Stored Procedures</span>
+                            <span class="skill-badge"><i class="fa-solid fa-chart-simple"></i> Query
+                                Optimization</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5: Cloud & Integration -->
+                    <div class="skill-category-card reveal-bottom" data-category="data-cloud">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                            <h3>Cloud &amp; Integration</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS Lambda</span>
+                            <span class="skill-badge"><i class="fa-solid fa-cloud"></i> Azure DevOps</span>
+                            <span class="skill-badge"><i class="fa-brands fa-aws"></i> AWS Textract</span>
+                            <span class="skill-badge"><i class="fa-solid fa-envelope-open-text"></i> RabbitMQ</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 6: Development Tools & AI -->
+                    <div class="skill-category-card reveal-bottom" data-category="tools-ai">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-robot"></i></div>
+                            <h3>Development Tools &amp; AI</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> Visual Studio</span>
+                            <span class="skill-badge"><i class="fa-solid fa-microchip"></i> GitHub Copilot</span>
+                            <span class="skill-badge"><i class="fa-solid fa-brain"></i> ChatGPT</span>
+                            <span class="skill-badge"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Coding
+                                Agents</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 7: Specialized Technologies -->
+                    <div class="skill-category-card reveal-bottom" data-category="tools-ai">
+                        <div class="category-header">
+                            <div class="category-icon"><i class="fa-solid fa-gear"></i></div>
+                            <h3>Specialized Technologies</h3>
+                        </div>
+                        <div class="skill-tags-cloud">
+                            <span class="skill-badge"><i class="fa-solid fa-file-lines"></i> Tesseract OCR</span>
+                            <span class="skill-badge"><i class="fa-solid fa-eye"></i> OpenCV</span>
+                            <span class="skill-badge"><i class="fa-solid fa-print"></i> Zebra Printer
+                                Integration</span>
+                            <span class="skill-badge"><i class="fa-solid fa-barcode"></i> ZPL Programming</span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+        </section>
 
-            <p class="section-desc">My primary focus is on the .NET ecosystem, backend architectures, APIs, and
-                AI-assisted development tools.</p>
+        <!-- 5. Professional Experience Section -->
+        <section id="experience" class="experience section-padding" aria-label="Professional Experience">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Professional <span>Experience</span></h2>
+                    <div class="line"></div>
+                </div>
 
-            <!-- Skills Tabs Navigation -->
-            <div class="skills-tabs">
-                <button class="tab-btn active" data-tab="backend">Languages & Backend</button>
-                <button class="tab-btn" data-tab="frontend">Frontend & UI</button>
-                <button class="tab-btn" data-tab="db-cloud">Database & Cloud</button>
-                <button class="tab-btn" data-tab="tools-devops">Tools & DevOps</button>
-            </div>
+                <div class="timeline">
+                    <!-- Current Position at ByVal Technologies -->
+                    <div class="timeline-item reveal-bottom">
+                        <div class="timeline-dot" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date-badge">
+                                <i class="fa-regular fa-calendar-check"></i> January 2023 – Present (3+ Years)
+                            </span>
 
-            <!-- Skills Content Areas -->
-            <div class="skills-content">
-                <!-- Tab 1: Backend -->
-                <div class="tab-content active" id="backend">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-code text-primary"></i> C# & .NET</span>
-                                <span class="skill-percent">90%</span>
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Software Developer</h3>
+                                    <h4 class="company-name">ByVal Technologies India Pvt Ltd</h4>
+                                </div>
+                                <span class="experience-location">
+                                    <i class="fa-solid fa-location-dot"></i> Coimbatore, India
+                                </span>
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-cubes text-primary"></i> ASP.NET
-                                    Core</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-brands fa-python text-primary"></i> Python</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-layer-group text-primary"></i> ASP.NET
-                                    MVC</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
+
+                            <ul class="experience-bullets">
+                                <li>
+                                    Developed and maintained enterprise travel expense and banking applications using
+                                    <strong>Blazor, MudBlazor, and ASP.NET Core</strong>, delivering highly secure,
+                                    responsive, and scalable web solutions.
+                                </li>
+                                <li>
+                                    Architected and built robust backend services with <strong>Entity Framework Core and
+                                        SQL Server</strong>, supporting mission-critical workflows for transaction
+                                    processing, approvals, and financial reporting.
+                                </li>
+                                <li>
+                                    Integrated <strong>RabbitMQ</strong> to handle asynchronous messaging for push
+                                    notifications, background ledger processing, and decoupled microservices
+                                    communication.
+                                </li>
+                                <li>
+                                    Implemented <strong>Role-Based Access Control (RBAC)</strong>, secure authentication
+                                    flows, and custom permission policies to meet rigorous regulatory compliance and
+                                    data isolation standards.
+                                </li>
+                                <li>
+                                    Designed responsive UI dashboards and visualization components in MudBlazor for
+                                    real-time financial data tracking and improved user experience.
+                                </li>
+                                <li>
+                                    Leveraged <strong>AI-powered coding assistants and developer productivity
+                                        tools</strong> to accelerate feature velocity, automate unit tests, streamline
+                                    debugging, refactor legacy modules, and produce automated documentation.
+                                </li>
+                                <li>
+                                    Engineered hardware device integration for <strong>Zebra label and barcode printers
+                                        using ZPL</strong> for logistics workflows.
+                                </li>
+                                <li>
+                                    Collaborated actively in Agile Scrum sprints, led peer code reviews, and mentored
+                                    junior developers on clean architectural patterns.
+                                </li>
+                            </ul>
+
+                            <!-- Core Tech Stack Tags -->
+                            <div class="timeline-tech-stack">
+                                <span class="timeline-tech-tag">C#</span>
+                                <span class="timeline-tech-tag">ASP.NET Core</span>
+                                <span class="timeline-tech-tag">Blazor</span>
+                                <span class="timeline-tech-tag">MudBlazor</span>
+                                <span class="timeline-tech-tag">EF Core</span>
+                                <span class="timeline-tech-tag">SQL Server</span>
+                                <span class="timeline-tech-tag">RabbitMQ</span>
+                                <span class="timeline-tech-tag">AWS Lambda</span>
+                                <span class="timeline-tech-tag">AI Copilot</span>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Tab 2: Frontend -->
-                <div class="tab-content" id="frontend">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-bolt text-primary"></i> Blazor</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-palette text-primary"></i>
-                                    MudBlazor</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-brands fa-html5 text-primary"></i> HTML5 &
-                                    CSS3</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-brands fa-js text-primary"></i> JavaScript</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
+        <!-- 6. Featured Projects Section -->
+        <section id="projects" class="projects section-padding" aria-label="Featured Projects">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured <span>Projects</span></h2>
+                    <div class="line"></div>
                 </div>
 
-                <!-- Tab 3: Database & Cloud -->
-                <div class="tab-content" id="db-cloud">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-database text-primary"></i> SQL
-                                    Server</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-server text-primary"></i> SQLite</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-brands fa-aws text-primary"></i> AWS (Lambda /
-                                    Textract)</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-cloud-arrow-up text-primary"></i> Azure
-                                    DevOps</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <p class="section-desc">
+                    A selection of production-grade enterprise systems, banking gateways, and automated solutions
+                    engineered to solve critical business problems.
+                </p>
 
-                <!-- Tab 4: Tools & DevOps -->
-                <div class="tab-content" id="tools-devops">
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-brands fa-github text-primary"></i> Git &
-                                    GitHub</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-robot text-primary"></i> AI-Assisted Dev
-                                    (Copilot/ChatGPT)</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-envelope-open-text text-primary"></i>
-                                    RabbitMQ</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-info">
-                                <span class="skill-name"><i class="fa-solid fa-shield-halved text-primary"></i> EF Core
-                                    / RBAC</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="projects-grid">
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Professional <span>Experience</span></h2>
-                <div class="line"></div>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item reveal-bottom">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2023 - Present</div>
-                    <div class="timeline-content">
-                        <h3>Software Developer</h3>
-                        <h4 class="company">ByVal Technologies India Pvt Ltd</h4>
-                        <span class="location"><i class="fa-solid fa-location-dot"></i> Coimbatore, India</span>
-
-                        <ul class="experience-bullets">
-                            <li>Developed and maintained travel expense and banking applications using <strong>Blazor,
-                                    MudBlazor, and ASP.NET Core</strong>, delivering secure and scalable web solutions.
-                            </li>
-                            <li>Built robust backend services with <strong>Entity Framework Core and SQL
-                                    Server</strong>, supporting workflows for transaction processing, approvals, and
-                                reporting.</li>
-                            <li>Leveraged AI-powered coding assistants and developer productivity tools to accelerate
-                                feature development, code generation, debugging, refactoring, and documentation while
-                                maintaining high code quality standards.</li>
-                            <li>Integrated <strong>RabbitMQ</strong> to handle asynchronous messaging for notifications,
-                                background processing, and system decoupling.</li>
-                            <li>Implemented role-based access control, authentication flows, and custom permission
-                                handling to meet compliance and security requirements.</li>
-                            <li>Designed responsive UI components and dashboards for real-time financial data
-                                visualization and enhanced user experience.</li>
-                            <li>Automated project documentation and report generation workflows using AI-assisted tools,
-                                improving productivity and reducing manual effort.</li>
-                            <li>Collaborated in agile teams, conducted code reviews, and mentored junior developers.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects section-padding">
-        <div class="container">
-            <div class="section-title">
-                <h2>Relevant <span>Projects</span></h2>
-                <div class="line"></div>
-            </div>
-
-            <p class="section-desc">Here is a selection of professional systems I have built and optimized.</p>
-
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card reveal-bottom">
-                    <div class="project-info">
-                        <div class="project-header">
+                    <!-- Project 1: WMS -->
+                    <div class="project-card reveal-bottom">
+                        <div class="project-card-header">
                             <span class="project-icon"><i class="fa-solid fa-warehouse"></i></span>
-                            <h3>WMS (Warehouse Management)</h3>
+                            <span class="project-scope-tag">Enterprise Logistics</span>
                         </div>
-                        <p class="project-desc">Developed and maintained shipment and invoice modules to handle
-                            real-time data processing and validation. Implemented document upload and validation
-                            workflows to ensure mandatory compliance before shipment approval, reducing processing
-                            errors.</p>
+                        <h3 class="project-title">WMS – Shipment Management</h3>
+                        <p class="project-desc">
+                            Enterprise warehouse and shipment platform managing high-volume dispatches, invoice
+                            reconciliations, and mandatory regulatory compliance validations.
+                        </p>
+                        <ul class="project-key-bullets">
+                            <li>Real-time shipment and invoice processing modules.</li>
+                            <li>Automated document upload and compliance validation workflows.</li>
+                            <li>SQL Server transaction tuning for high-concurrency order dispatching.</li>
+                        </ul>
                         <div class="project-tech">
                             <span>ASP.NET MVC</span>
                             <span>C#</span>
                             <span>SQL Server</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card reveal-bottom" style="animation-delay: 0.1s;">
-                    <div class="project-info">
-                        <div class="project-header">
-                            <span class="project-icon"><i class="fa-solid fa-shield-halved"></i></span>
-                            <h3>B-Auth</h3>
+                        <div class="project-action">
+                            <button class="project-details-btn" data-project="wms">
+                                Architecture Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
                         </div>
-                        <p class="project-desc">Developed and maintained an authentication and authorization platform
-                            for secure user access and role-based permissions. Built a centralized web portal using
-                            Blazor and MudBlazor to manage application settings and user access rights.</p>
+                    </div>
+
+                    <!-- Project 2: B-Auth -->
+                    <div class="project-card reveal-bottom">
+                        <div class="project-card-header">
+                            <span class="project-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                            <span class="project-scope-tag">Identity &amp; Security</span>
+                        </div>
+                        <h3 class="project-title">B-Auth – Authentication Platform</h3>
+                        <p class="project-desc">
+                            Centralized security and authorization platform managing enterprise identity, role-based
+                            access controls, tenant configurations, and user permission boundaries.
+                        </p>
+                        <ul class="project-key-bullets">
+                            <li>Centralized web management portal built in Blazor &amp; MudBlazor.</li>
+                            <li>Granular RBAC permission models and claim-based security policies.</li>
+                            <li>Dynamic tenant settings and application configuration workflows.</li>
+                        </ul>
                         <div class="project-tech">
                             <span>Blazor</span>
                             <span>ASP.NET Core</span>
                             <span>MudBlazor</span>
+                            <span>RBAC</span>
+                        </div>
+                        <div class="project-action">
+                            <button class="project-details-btn" data-project="bauth">
+                                Architecture Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 3 -->
-                <div class="project-card reveal-bottom" style="animation-delay: 0.2s;">
-                    <div class="project-info">
-                        <div class="project-header">
+                    <!-- Project 3: Blink -->
+                    <div class="project-card reveal-bottom">
+                        <div class="project-card-header">
                             <span class="project-icon"><i class="fa-solid fa-bolt"></i></span>
-                            <h3>Blink</h3>
+                            <span class="project-scope-tag">FinTech Integration</span>
                         </div>
-                        <p class="project-desc">Integrated the Blink application with banking credit gateway systems to
-                            support secure financial transactions. Designed responsive, user-friendly forms and
-                            interfaces using MudBlazor to handle complex JSON configuration processes.</p>
+                        <h3 class="project-title">Blink – Banking Credit Gateway</h3>
+                        <p class="project-desc">
+                            Financial integration platform connecting enterprise applications with banking credit
+                            gateways to execute secure multi-party financial transactions and data reconciliations.
+                        </p>
+                        <ul class="project-key-bullets">
+                            <li>Integration with tier-1 banking credit gateway APIs.</li>
+                            <li>Dynamic form generators parsing complex nested JSON configurations.</li>
+                            <li>High-reliability batch data import and export reconciliation pipelines.</li>
+                        </ul>
                         <div class="project-tech">
+                            <span>Blazor</span>
                             <span>MudBlazor</span>
-                            <span>ASP.NET Core</span>
-                            <span>JSON Configs</span>
+                            <span>Banking APIs</span>
+                            <span>JSON</span>
+                        </div>
+                        <div class="project-action">
+                            <button class="project-details-btn" data-project="blink">
+                                Architecture Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 4 -->
-                <div class="project-card reveal-bottom" style="animation-delay: 0.3s;">
-                    <div class="project-info">
-                        <div class="project-header">
+                    <!-- Project 4: CAST -->
+                    <div class="project-card reveal-bottom">
+                        <div class="project-card-header">
                             <span class="project-icon"><i class="fa-solid fa-chart-line"></i></span>
-                            <h3>CAST</h3>
+                            <span class="project-scope-tag">Cloud Serverless</span>
                         </div>
-                        <p class="project-desc">Developed and enhanced Cash Accounting Studio for financial
-                            reconciliation workflows. Migrated legacy backend services to serverless AWS Lambda
-                            architecture to improve scalability and reduce cloud infrastructure costs. Integrated
-                            RabbitMQ.</p>
+                        <h3 class="project-title">CAST – Cash Accounting Studio</h3>
+                        <p class="project-desc">
+                            Financial reconciliation studio handling ledger matching and cash accounting, migrated to a
+                            serverless AWS Lambda architecture to optimize scale and infrastructure costs.
+                        </p>
+                        <ul class="project-key-bullets">
+                            <li>Migrated mission-critical legacy services to serverless AWS Lambda.</li>
+                            <li>Integrated RabbitMQ for asynchronous event-driven task processing.</li>
+                            <li>Decoupled transaction ingestion from batch reconciliation reporting.</li>
+                        </ul>
                         <div class="project-tech">
                             <span>AWS Lambda</span>
                             <span>RabbitMQ</span>
                             <span>ASP.NET Core</span>
+                            <span>Serverless</span>
+                        </div>
+                        <div class="project-action">
+                            <button class="project-details-btn" data-project="cast">
+                                Architecture Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
                         </div>
                     </div>
-                </div>
 
-                <!-- Project 5 -->
-                <div class="project-card reveal-bottom" style="animation-delay: 0.4s;">
-                    <div class="project-info">
-                        <div class="project-header">
+                    <!-- Project 5: C-Scan -->
+                    <div class="project-card reveal-bottom">
+                        <div class="project-card-header">
                             <span class="project-icon"><i class="fa-solid fa-qrcode"></i></span>
-                            <h3>C-Scan</h3>
+                            <span class="project-scope-tag">Computer Vision &amp; AI</span>
                         </div>
-                        <p class="project-desc">Designed and built an AI-powered receipt scanning and OCR solution to
-                            automate invoice data extraction. Implemented image preprocessing pipelines for noise
-                            reduction, skew correction, and text enhancement using OpenCV and Tesseract.</p>
+                        <h3 class="project-title">C-Scan – Receipt Scanning &amp; OCR</h3>
+                        <p class="project-desc">
+                            AI-powered document processing solution automating receipt and invoice data extraction
+                            through image enhancement pipelines and optical character recognition.
+                        </p>
+                        <ul class="project-key-bullets">
+                            <li>Computer vision preprocessing pipeline: deskewing, noise reduction, and binarization.
+                            </li>
+                            <li>Tesseract OCR integration with custom regex parsing for financial data.</li>
+                            <li>Significant reduction in manual data entry overhead and human error.</li>
+                        </ul>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Tesseract OCR</span>
                             <span>OpenCV</span>
+                            <span>Image Pipelines</span>
+                        </div>
+                        <div class="project-action">
+                            <button class="project-details-btn" data-project="cscan">
+                                Architecture Details <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Development Approach / What I Do Section -->
+        <section id="approach" class="approach section-padding" aria-label="Development Approach">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Engineering <span>Approach</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <p class="section-desc">
+                    Core principles and architectural practices that guide my development of secure, scalable, and
+                    maintainable enterprise software.
+                </p>
+
+                <div class="approach-grid">
+                    <div class="approach-card reveal-bottom">
+                        <div class="approach-card-header">
+                            <div class="approach-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <h3>Enterprise Backend Architecture</h3>
+                        </div>
+                        <p>
+                            Applying Clean Architecture, SOLID principles, and domain-driven design to build modular
+                            ASP.NET Core services that maintain high cohesion and low coupling.
+                        </p>
+                    </div>
+
+                    <div class="approach-card reveal-bottom">
+                        <div class="approach-card-header">
+                            <div class="approach-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+                            <h3>Event-Driven &amp; Async Messaging</h3>
+                        </div>
+                        <p>
+                            Leveraging RabbitMQ for asynchronous message brokering, decoupled services, background job
+                            queues, and resilient distributed processing.
+                        </p>
+                    </div>
+
+                    <div class="approach-card reveal-bottom">
+                        <div class="approach-card-header">
+                            <div class="approach-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <h3>Secure API Design &amp; RBAC</h3>
+                        </div>
+                        <p>
+                            Implementing strict authentication, OAuth2/JWT tokens, role-based access control, input
+                            sanitization, and audit logging across all endpoints.
+                        </p>
+                    </div>
+
+                    <div class="approach-card reveal-bottom">
+                        <div class="approach-card-header">
+                            <div class="approach-icon"><i class="fa-solid fa-database"></i></div>
+                            <h3>Database &amp; ORM Optimization</h3>
+                        </div>
+                        <p>
+                            Fine-tuning Entity Framework Core queries, SQL Server indexing, stored procedures, and
+                            transaction isolation levels to maximize throughput under load.
+                        </p>
+                    </div>
+
+                    <div class="approach-card reveal-bottom">
+                        <div class="approach-card-header">
+                            <div class="approach-icon"><i class="fa-solid fa-cloud"></i></div>
+                            <h3>Cloud &amp; Serverless Integration</h3>
+                        </div>
+                        <p>
+                            Migrating computational workloads to serverless AWS Lambda and integrating cloud OCR
+                            services (AWS Textract) alongside Azure DevOps automated pipelines.
+                        </p>
+                    </div>
+
+                    <div class="approach-card reveal-bottom">
+                        <div class="approach-card-header">
+                            <div class="approach-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h3>AI-Accelerated Engineering</h3>
+                        </div>
+                        <p>
+                            Integrating GitHub Copilot and intelligent coding agents into everyday workflows for rapid
+                            unit test generation, refactoring, and automated documentation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Education & Certifications Section -->
+        <section id="education" class="education-certs section-padding" aria-label="Education and Certifications">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education &amp; <span>Certifications</span></h2>
+                    <div class="line"></div>
+                </div>
+
+                <div class="edu-certs-grid">
+                    <!-- Academic Education Column -->
+                    <div class="edu-column">
+                        <div class="edu-card reveal-left">
+                            <div class="edu-header">
+                                <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <div>
+                                    <h3>Master of Computer Applications (MCA)</h3>
+                                    <p class="edu-institution">Hindusthan College of Engineering and Technology,
+                                        Coimbatore, India</p>
+                                </div>
+                            </div>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 8px;">
+                                Advanced coursework in Distributed Systems, Database Management Systems, Enterprise
+                                Software Architecture, Data Structures &amp; Algorithms, and Object-Oriented Software
+                                Engineering.
+                            </p>
+                            <div class="edu-meta">
+                                <span class="edu-badge"><i class="fa-solid fa-calendar"></i> 2021 – 2023</span>
+                                <span class="edu-badge"><i class="fa-solid fa-star"></i> 8.3 CGPA</span>
+                            </div>
+                        </div>
+
+                        <!-- Language Proficiencies -->
+                        <div class="languages-box reveal-left">
+                            <h4><i class="fa-solid fa-language text-primary"></i> Spoken Languages</h4>
+                            <div class="lang-tags">
+                                <span class="lang-pill"><strong>English:</strong> Professional Working
+                                    Proficiency</span>
+                                <span class="lang-pill"><strong>Tamil:</strong> Native Proficiency</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Certifications Column -->
+                    <div class="certs-column reveal-right">
+                        <div class="cert-card">
+                            <h3 style="font-size: 1.3rem; margin-bottom: 20px;">
+                                <i class="fa-solid fa-certificate text-secondary"></i> Professional Certifications
+                            </h3>
+
+                            <div class="cert-list">
+                                <div class="cert-item">
+                                    <i class="fa-solid fa-database text-primary"></i>
+                                    <div class="cert-info">
+                                        <h4>Microsoft Certified: Azure SQL</h4>
+                                        <p>Relational Cloud Database Architecture &amp; Query Management</p>
+                                    </div>
+                                </div>
+
+                                <div class="cert-item">
+                                    <i class="fa-solid fa-cloud-arrow-up text-secondary"></i>
+                                    <div class="cert-info">
+                                        <h4>Microsoft Certified: Azure DevOps</h4>
+                                        <p>CI/CD Pipelines, Agile Project Management &amp; Cloud Deployment</p>
+                                    </div>
+                                </div>
+
+                                <div class="cert-item">
+                                    <i class="fa-solid fa-print text-primary"></i>
+                                    <div class="cert-info">
+                                        <h4>Zebra Printer Integration (ZPL)</h4>
+                                        <p>Hardware Integration &amp; Real-Time Industrial Labeling Systems</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="Contact" class="Contact section-padding">
-        <div class="container">
-            <div class="Contact-form reveal-bottom">
-                <h1>Contact <span>Me</span></h1>
-                <p>I am open to new opportunities and collaboration. Feel free to connect with me.</p>
-
-                <div class="contact-details">
-                    <div class="detail-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>+91 96297 94110</span>
-                    </div>
-                    <div class="detail-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span>santhoshgandhim@gmail.com</span>
-                    </div>
+        <!-- 9. Contact Section -->
+        <section id="contact" class="Contact section-padding" aria-label="Contact Santhoshgandhi M">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get in <span>Touch</span></h2>
+                    <div class="line"></div>
                 </div>
 
-                <form action="mailto:santhoshgandhim@gmail.com" method="post" enctype="text/plain">
-                    <div class="form-row">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="E-mail Address" required>
+                <p class="section-desc">
+                    Interested in discussing enterprise software opportunities, technical collaboration, or engineering
+                    roles? Feel free to reach out directly.
+                </p>
+
+                <div class="contact-wrapper reveal-bottom">
+                    <!-- Left: Contact Information & Quick Cards -->
+                    <div class="contact-info-col">
+                        <h3>Let's Connect</h3>
+                        <p>
+                            I am open to full-time software engineering roles, enterprise consulting, and innovative
+                            software initiatives. You can connect with me via email, phone, or LinkedIn.
+                        </p>
+
+                        <div class="contact-cards">
+                            <!-- Direct Email Card with One-Click Copy -->
+                            <div class="contact-quick-card">
+                                <div class="quick-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <span class="quick-label">Email Address</span>
+                                    <span class="quick-value">santhoshgandhim@gmail.com</span>
+                                </div>
+                                <button type="button" id="copy-email-btn" class="copy-btn"
+                                    title="Copy Email to Clipboard" aria-label="Copy Email to Clipboard">
+                                    <i class="fa-regular fa-copy"></i>
+                                </button>
+                            </div>
+
+                            <!-- Phone Card -->
+                            <div class="contact-quick-card">
+                                <div class="quick-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <span class="quick-label">Phone Number</span>
+                                    <span class="quick-value">+91 96297 94110</span>
+                                </div>
+                            </div>
+
+                            <!-- Location Card -->
+                            <div class="contact-quick-card">
+                                <div class="quick-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <span class="quick-label">Current Location</span>
+                                    <span class="quick-value">Coimbatore, Tamil Nadu, India</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <input type="text" name="Subject" placeholder="Write a subject" required>
-                    <textarea name="Message" rows="8" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+
+                    <!-- Right: Validated Interactive Contact Form -->
+                    <div class="contact-form-col">
+                        <form id="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Your Name *</label>
+                                    <input type="text" id="contact-name" name="name" class="form-control"
+                                        placeholder="e.g. John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" class="form-control"
+                                        placeholder="e.g. john@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-subject">Subject *</label>
+                                <input type="text" id="contact-subject" name="subject" class="form-control"
+                                    placeholder="e.g. Opportunity Discussion / Project Collaboration" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contact-message">Your Message *</label>
+                                <textarea id="contact-message" name="message" class="form-control"
+                                    placeholder="Write your message here..." required></textarea>
+                            </div>
+
+                            <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+
+                            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 10. Footer Section -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3 class="logo" style="font-size: 1.8rem;">Santhosh<span>gandhi</span></h3>
+                    <p>Software Developer | .NET Developer | AI-Assisted Software Engineer</p>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="https://github.com/santhosh0110" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/santhoshgandhim" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/santhosh012000?t=5V11mbxC_1LSSvBbXWcNuQ&amp;s=09" target="_blank"
+                        rel="noopener noreferrer" aria-label="Twitter / X Profile">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="mailto:santhoshgandhim@gmail.com" aria-label="Email Me">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2026</span> Santhoshgandhi M. All rights reserved.</p>
+                <p>Designed and engineered with modern .NET principles, clean architecture, and AI assistance.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>Santhoshgandhi M</p>
-        <p>Connect with me on social media:</p>
-        <div class="social">
-            <a href="https://github.com/santhosh0110" target="_blank" aria-label="GitHub"><i
-                    class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/santhosh012000?t=5V11mbxC_1LSSvBbXWcNuQ&s=09" target="_blank"
-                aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-        <p class="end">&copy; 2026 Santhoshgandhi M. All rights reserved.</p>
     </footer>
 
-    <!-- Vanilla Javascript -->
-    <script>
-        // Typing Effect Script
-        const words = [".NET Developer", "C# & Blazor Specialist", "AI-Assisted Developer"];
-        let wordIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-        const typingSpeed = 100;
-        const deletingSpeed = 50;
-        const delayBetweenWords = 2000;
-        const target = document.getElementById("typing-text");
+    <!-- Floating Back to Top Action -->
+    <button id="back-to-top" aria-label="Back to top of page">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
-        function type() {
-            const currentWord = words[wordIndex];
-            if (isDeleting) {
-                target.textContent = currentWord.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                target.textContent = currentWord.substring(0, charIndex + 1);
-                charIndex++;
-            }
+    <!-- Project Details Modal Inspector -->
+    <div id="project-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title-elem">
+        <div class="modal-card">
+            <button id="modal-close" class="modal-close-btn" aria-label="Close modal window">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-dynamic-content">
+                <!-- Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
 
-            let speed = isDeleting ? deletingSpeed : typingSpeed;
-
-            if (!isDeleting && charIndex === currentWord.length) {
-                isDeleting = true;
-                speed = delayBetweenWords;
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                wordIndex = (wordIndex + 1) % words.length;
-                speed = 500;
-            }
-
-            setTimeout(type, speed);
-        }
-
-        document.addEventListener("DOMContentLoaded", () => {
-            setTimeout(type, 1000);
-
-            // Scroll reveal animation setting
-            setupScrollReveal();
-        });
-
-        // Skill Tabs Switching
-        const tabBtns = document.querySelectorAll(".tab-btn");
-        const tabContents = document.querySelectorAll(".tab-content");
-
-        tabBtns.forEach(btn => {
-            btn.addEventListener("click", () => {
-                const tabId = btn.getAttribute("data-tab");
-
-                // Remove active classes
-                tabBtns.forEach(b => b.classList.remove("active"));
-                tabContents.forEach(c => c.classList.remove("active"));
-
-                // Add active classes
-                btn.classList.add("active");
-                document.getElementById(tabId).classList.add("active");
-            });
-        });
-
-        // Mobile Nav Toggle
-        const navToggle = document.querySelector(".nav-toggle");
-        const navMenu = document.querySelector(".nav-menu");
-
-        navToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("open");
-            const icon = navToggle.querySelector("i");
-            if (navMenu.classList.contains("open")) {
-                icon.className = "fa-solid fa-xmark";
-            } else {
-                icon.className = "fa-solid fa-bars";
-            }
-        });
-
-        // Close mobile nav when clicking a link
-        document.querySelectorAll(".nav-menu a").forEach(link => {
-            link.addEventListener("click", () => {
-                navMenu.classList.remove("open");
-                navToggle.querySelector("i").className = "fa-solid fa-bars";
-            });
-        });
-
-        // Header active link and background shift on scroll
-        const header = document.querySelector(".navbar-header");
-        const sections = document.querySelectorAll("section");
-        const navLinks = document.querySelectorAll(".nav-menu a");
-
-        window.addEventListener("scroll", () => {
-            // Header background blur toggle
-            if (window.scrollY > 50) {
-                header.classList.add("scrolled");
-            } else {
-                header.classList.remove("scrolled");
-            }
-
-            // Highlighting current section
-            let current = "";
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= (sectionTop - 250)) {
-                    current = section.getAttribute("id");
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove("active");
-                if (link.getAttribute("href").includes(current)) {
-                    link.classList.add("active");
-                }
-            });
-        });
-
-        // Intersection Observer for scroll animations
-        function setupScrollReveal() {
-            const revealElements = document.querySelectorAll('.reveal-bottom, .reveal-left, .reveal-right, .fade-in-up');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('active');
-                        observer.unobserve(entry.target); // Reveal only once
-                    }
-                });
-            }, {
-                threshold: 0.15
-            });
-
-            revealElements.forEach(element => {
-                observer.observe(element);
-            });
-        }
-    </script>
+    <!-- Modular Vanilla JavaScript Application -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
