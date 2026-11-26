@@ -32,6 +32,8 @@
   - `--accent-color: #f9004d` (Crimson)
   - Full Dark Theme (`data-theme="dark"`) and Light Theme (`data-theme="light"`) support with LocalStorage persistence
   - Fixed Navbar alignment with dedicated Theme Toggle button and Resume CTA button
+  - Layered authentic background image (`img/background.webp`) on the Home screen with responsive gradient overlay
+  - Upgraded Font Awesome to 6.5.2 to natively render the official X (formerly Twitter) icon (`fa-brands fa-x-twitter`)
 - [x] Document existing bugs: 5.33MB raw camera image, universal `span` selector issue, lack of SEO/OG tags, deprecated `pageYOffset`, and native `mailto:` form action
 
 ---
