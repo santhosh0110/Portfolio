@@ -1,0 +1,18 @@
+{
+  "name": "santhoshgandhi-portfolio",
+  "version": "2.0.0",
+  "description": "Professional Software Developer Portfolio for Santhoshgandhi M",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "serve": "python -m http.server 8080"
+  },
+  "keywords": [
+    "portfolio",
+    "dotnet",
+    "blazor",
+    "csharp",
+    "developer"
+  ],
+  "author": "Santhoshgandhi M",
+  "license": "MIT"
+}
