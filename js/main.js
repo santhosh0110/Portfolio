@@ -2,7 +2,8 @@
  * ============================================================================
  * SANTHOSHGANDHI M | DEVELOPER PORTFOLIO SCRIPTS
  * Features:
- * - Interactive 3D Software Engineering Node Canvas (WebGL / Canvas)
+ * - Full Dark / Light Theme Manager with LocalStorage Persistence
+ * - Authentic Crimson Red (#f9004d) 3D Architecture Canvas
  * - Dynamic Role Typing Engine
  * - Smooth Header Scroll Spy & Progress Indicator
  * - Accessible Modal System for Projects
@@ -19,6 +20,7 @@
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     document.addEventListener('DOMContentLoaded', () => {
+        initThemeManager();
         initScrollProgress();
         initNavigation();
         initTypingEffect();
@@ -30,6 +32,52 @@
         initBackToTop();
         initDynamicYear();
     });
+
+    /* ==========================================================================
+       0. Dark / Light Theme Manager
+       ========================================================================== */
+    function initThemeManager() {
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const root = document.documentElement;
+
+        // Retrieve saved theme or system preference
+        const savedTheme = localStorage.getItem('portfolio-theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        let currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+        applyTheme(currentTheme);
+
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', () => {
+                currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                applyTheme(currentTheme);
+                localStorage.setItem('portfolio-theme', currentTheme);
+            });
+        }
+
+        // Listen for system changes if user hasn't explicitly set a preference
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('portfolio-theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                applyTheme(currentTheme);
+            }
+        });
+
+        function applyTheme(theme) {
+            root.setAttribute('data-theme', theme);
+            if (themeToggleBtn) {
+                const icon = themeToggleBtn.querySelector('i');
+                if (icon) {
+                    icon.className = theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+                }
+                const label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+                themeToggleBtn.setAttribute('title', label);
+                themeToggleBtn.setAttribute('aria-label', label);
+            }
+            // Notify 3D canvas of theme shift
+            window.dispatchEvent(new CustomEvent('themeChanged', { detail: { theme } }));
+        }
+    }
 
     /* ==========================================================================
        1. Scroll Progress & Sticky Navbar Spy
@@ -172,8 +220,8 @@
 
     /* ==========================================================================
        4. Interactive 3D Software Engineering Node Canvas
-       High-performance 3D particle constellation representing distributed
-       nodes, APIs, .NET CLR, and cloud microservices.
+       Redesigned with the authentic Crimson Red (#f9004d) palette and
+       dynamic light/dark contrast adaptation.
        ========================================================================== */
     function init3DHeroCanvas() {
         const canvas = document.getElementById('hero-canvas');
@@ -184,14 +232,6 @@
 
         let width = canvas.width = window.innerWidth;
         let height = canvas.height = canvas.parentElement.offsetHeight || window.innerHeight;
-
-        let mouse = {
-            x: width / 2,
-            y: height / 2,
-            targetX: width / 2,
-            targetY: height / 2,
-            active: false
-        };
 
         // Node definitions (Representing software architecture components)
         const nodeCount = window.innerWidth < 768 ? 32 : 55;
@@ -208,7 +248,8 @@
                 this.vz = (Math.random() - 0.5) * 0.6;
                 this.radius = Math.random() * 2.5 + 2;
                 this.label = (index < techLabels.length) ? techLabels[index] : null;
-                this.color = index % 3 === 0 ? '#6366f1' : (index % 3 === 1 ? '#38bdf8' : '#f43f5e');
+                // Palette: #f9004d (Crimson), #38bdf8 (Sky Blue), #ff336f (Rose)
+                this.color = index % 3 === 0 ? '#f9004d' : (index % 3 === 1 ? '#38bdf8' : '#ff336f');
             }
 
             update(rotX, rotY) {
@@ -247,22 +288,22 @@
                 this.alpha = Math.min(Math.max((rz + 350) / 700, 0.15), 0.95);
             }
 
-            draw() {
+            draw(isLight) {
                 if (this.projScale <= 0) return;
 
                 ctx.beginPath();
                 ctx.arc(this.projX, this.projY, this.radius * this.projScale, 0, Math.PI * 2);
                 ctx.fillStyle = this.color;
-                ctx.globalAlpha = this.alpha * 0.85;
+                ctx.globalAlpha = this.alpha * (isLight ? 0.95 : 0.85);
                 ctx.shadowColor = this.color;
-                ctx.shadowBlur = 10 * this.projScale;
+                ctx.shadowBlur = isLight ? 4 : (10 * this.projScale);
                 ctx.fill();
 
                 // Draw label for key architecture nodes
                 if (this.label && this.projScale > 0.8) {
-                    ctx.font = `${Math.floor(10 * this.projScale)}px 'JetBrains Mono', monospace`;
-                    ctx.fillStyle = '#f8fafc';
-                    ctx.globalAlpha = this.alpha * 0.7;
+                    ctx.font = `600 ${Math.floor(10.5 * this.projScale)}px 'JetBrains Mono', monospace`;
+                    ctx.fillStyle = isLight ? '#0f172a' : '#f8fafc';
+                    ctx.globalAlpha = this.alpha * (isLight ? 0.85 : 0.75);
                     ctx.fillText(this.label, this.projX + 8, this.projY - 6);
                 }
             }
@@ -308,6 +349,8 @@
         function render() {
             ctx.clearRect(0, 0, width, height);
 
+            const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+
             rotX += (targetRotX - rotX) * 0.05;
             rotY += (targetRotY - rotY) * 0.05;
 
@@ -319,7 +362,7 @@
             // Update & project all nodes
             nodes.forEach(node => node.update(rotX, rotY));
 
-            // Connect neighboring nodes with glowing vectors
+            // Connect neighboring nodes with glowing vectors (#f9004d brand color)
             const maxDistance = 140;
             for (let i = 0; i < nodes.length; i++) {
                 for (let j = i + 1; j < nodes.length; j++) {
@@ -331,9 +374,9 @@
                         ctx.beginPath();
                         ctx.moveTo(nodes[i].projX, nodes[i].projY);
                         ctx.lineTo(nodes[j].projX, nodes[j].projY);
-                        const connectionAlpha = (1 - dist / maxDistance) * 0.25 * Math.min(nodes[i].alpha, nodes[j].alpha);
-                        ctx.strokeStyle = '#6366f1';
-                        ctx.globalAlpha = connectionAlpha;
+                        const connectionAlpha = (1 - dist / maxDistance) * 0.28 * Math.min(nodes[i].alpha, nodes[j].alpha);
+                        ctx.strokeStyle = '#f9004d';
+                        ctx.globalAlpha = isLight ? (connectionAlpha * 0.75) : connectionAlpha;
                         ctx.lineWidth = 1 * nodes[i].projScale;
                         ctx.shadowBlur = 0;
                         ctx.stroke();
@@ -342,7 +385,7 @@
             }
 
             // Draw nodes
-            nodes.forEach(node => node.draw());
+            nodes.forEach(node => node.draw(isLight));
 
             ctx.globalAlpha = 1;
             if (isHeroVisible) {
@@ -485,7 +528,7 @@
                         </ul>
                     </div>
                     <div style="display: flex; gap: 12px; align-items: center; justify-content: flex-end;">
-                        <a href="#Contact" class="btn btn-primary btn-sm modal-contact-btn">Discuss This Architecture</a>
+                        <a href="#contact" class="btn btn-primary btn-sm modal-contact-btn">Discuss This Architecture</a>
                     </div>
                 </div>
             `;
@@ -541,7 +584,7 @@
                 const email = 'santhoshgandhim@gmail.com';
                 navigator.clipboard.writeText(email).then(() => {
                     const originalTitle = copyBtn.getAttribute('title') || 'Copy';
-                    copyBtn.innerHTML = '<i class="fa-solid fa-check" style="color: #34d399;"></i>';
+                    copyBtn.innerHTML = '<i class="fa-solid fa-check" style="color: #10b981;"></i>';
                     setTimeout(() => {
                         copyBtn.innerHTML = '<i class="fa-regular fa-copy"></i>';
                         copyBtn.setAttribute('title', originalTitle);

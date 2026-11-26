@@ -24,19 +24,14 @@
 - [x] Extract full resume data from `Santhosh Resume.pdf`
 - [x] Identify Git status, remotes (`origin/main`), and branch information
 - [x] Identify exact color palette and design tokens to preserve:
-  - `--primary-color: #6366f1` (Indigo)
-  - `--primary-hover: #4f46e5`
-  - `--primary-glow: rgba(99, 102, 241, 0.2)`
+  - `--primary-color: #f9004d` (Authentic Brand Crimson Red - Replaced purple/indigo)
+  - `--primary-hover: #d90043`
+  - `--primary-light: #ff336f`
+  - `--primary-glow: rgba(249, 0, 77, 0.22)`
   - `--secondary-color: #38bdf8` (Sky Blue)
-  - `--accent-color: #f43f5e` (Rose)
-  - `--bg-dark: #0b0f19` (Rich Deep Slate)
-  - `--bg-dark-secondary: #0f172a` (Slate-900)
-  - `--bg-card: rgba(30, 41, 59, 0.7)` (Slate-800 Glassmorphic)
-  - `--text-main: #f8fafc` (Slate-50)
-  - `--text-muted: #94a3b8` (Slate-400)
-  - `--border-color: rgba(255, 255, 255, 0.08)`
-  - `--font-heading: 'Outfit', sans-serif`
-  - `--font-body: 'Inter', sans-serif`
+  - `--accent-color: #f9004d` (Crimson)
+  - Full Dark Theme (`data-theme="dark"`) and Light Theme (`data-theme="light"`) support with LocalStorage persistence
+  - Fixed Navbar alignment with dedicated Theme Toggle button and Resume CTA button
 - [x] Document existing bugs: 5.33MB raw camera image, universal `span` selector issue, lack of SEO/OG tags, deprecated `pageYOffset`, and native `mailto:` form action
 
 ---

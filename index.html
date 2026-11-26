@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -17,9 +17,9 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://santhosh0110.github.io/Portfolio/">
 
-    <!-- Favicon (Embedded Modern SVG Icon) -->
+    <!-- Favicon (Embedded Modern SVG Icon in Brand #f9004d) -->
     <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='55' font-weight='800' fill='white'>S</text></svg>">
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f9004d'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='55' font-weight='800' fill='white'>S</text></svg>">
 
     <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website">
@@ -95,11 +95,7 @@
                 <span class="logo-badge">.NET</span>
             </a>
 
-            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
-                aria-controls="primary-nav-menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
+            <!-- Navigation Links -->
             <ul id="primary-nav-menu" class="nav-menu">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -109,12 +105,24 @@
                 <li><a href="#approach">What I Do</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="Santhosh Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-cta-btn">
-                        <i class="fa-solid fa-download"></i> Resume
-                    </a>
-                </li>
             </ul>
+
+            <!-- Navbar Actions: Theme Switcher & Aligned Resume CTA -->
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark and light theme" title="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <a href="Santhosh Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn" aria-label="Download Santhosh Resume PDF">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Resume</span>
+                </a>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="primary-nav-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </nav>
     </header>
 
